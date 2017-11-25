@@ -40,9 +40,10 @@ Bots will listen to channels activities depending of the environment you are run
 
 For development mode:
 
-|  ID  | Channel | NODE_ENV  
-|---|---|---|---|---|---|---|---|---|---|
-|C28NSV63Y|#tests-dev|development   
-|C06TES7T7|#linkedin|production   
-|C0FSPRJBY|#resumes|production
-|C2475D6QH|#tests|production
+| ID  | Channel | NODE_ENV  |
+| ------------- | ------------- | ------------- |
+|C28NSV63Y|#tests-dev|development|
+|C28NSV63Y|#tests-dev|development|   
+|C06TES7T7|#linkedin|production|  
+|C0FSPRJBY|#resumes|production|
+|C2475D6QH|#tests|production|
