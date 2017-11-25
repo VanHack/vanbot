@@ -1,0 +1,15 @@
+{
+  "vanhack_premium": {
+    "id": "vanhack_premium",
+    "name": "vanhackbot",
+    "vars": {
+      "watchedChannels": [
+        "C28NSV63Y"
+      ]
+    }
+  },
+  "vanhack_prop": {
+    "id": "vanhack_pro",
+    "name": "vanhackbot"
+  }
+}

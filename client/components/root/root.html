@@ -1,0 +1,37 @@
+<template name="root">
+  {{#if Template.subscriptionsReady}}
+      <div class="container">
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#to-review" aria-controls="to-review" role="tab" data-toggle="tab">
+            To Review <span class="badge">{{countToReview}}</span>
+          </a>
+        </li>
+          <li role="presentation"><a href="#done" aria-controls="done" role="tab" data-toggle="tab">
+            Done <span class="badge badge-success">{{countReviewed}}</span>
+          </a>
+        </li>
+        </ul>
+
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="to-review">
+
+            {{#each requestsToReview}}
+              {{> request this}}
+            {{else}}
+            <p>You don't have any messages to review</p>
+            {{/each}}
+          </div>
+          <div role="tabpanel" class="tab-pane" id="done">
+            {{#each requestsReviewed}}
+              {{> request this}}
+            {{else}}
+            <p>You have work to do! Go to 'To Review' tab.</p>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    {{else}}
+      {{> loader}}
+    {{/if}}
+</template>

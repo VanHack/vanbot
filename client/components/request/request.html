@@ -1,0 +1,58 @@
+<template name="request">
+  <div class="request">
+    <div class="avatar">
+      <img
+        src="{{this.user.profile.image_48}}" alt="{{this.user.name}}"
+        style="border-radius: 5px;" >
+    </div>
+    <div class="content">
+      <div class="user"><b>{{this.user.name}}</b> - <span class="date">{{moFormat this.date 'DD/MM/YYYY'}} at {{moFormat this.date 'hh:mm A'}}</span></div>
+      <div class="text">{{{parseText this.text}}}</div>
+    </div>
+    <div class="request-actions">
+      <a
+        href="#collapse-{{this._id}}"
+        class="btn btn-default"
+        data-toggle="collapse"
+        aria-expanded="false"
+        aria-controls="collapse-{{this._id}}">
+        Reply
+      </a>
+      {{#unless done}}
+        <button class="btn btn-success" data-action="done">Done</button>
+      {{/unless}}
+    </div>
+    <div class="container">
+      <div class="collapse" id="collapse-{{this._id}}">
+        <div class="replies">
+          {{#each replies}}
+            <div class="reply">
+              <div class="avatar">
+                <img
+                   src="/img/vanhack.jpg"
+                   alt="vanhackbot" />
+              </div>
+              <div class="content">
+                <div class="user"><b>vanhackbot</b> - <span class="date">{{moFormat this.date 'DD/MM/YYYY'}} at {{moFormat this.date 'hh:mm A'}}</span></div>
+                <div class="text">{{{parseText text}}}</div>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+        <form class="form-message">
+          <textarea
+            class="form-control"
+            name="message"
+            rows="3"
+            minlength="4"
+            placeholder="Type a message for this Vanhacker..."
+            required
+            ></textarea>
+            <div class="reply-actions">
+              <button type="submit" class="btn btn-default">Send</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>

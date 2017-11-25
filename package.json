@@ -1,0 +1,13 @@
+{
+  "name": "vanhackbot",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=development meteor --settings settings.dev.json"
+  },
+  "dependencies": {
+    "bufferutil": "^1.2.1",
+    "meteor-node-stubs": "~0.2.0",
+    "slackbots": "^0.5.2",
+    "utf-8-validate": "^1.2.1"
+  }
+}
