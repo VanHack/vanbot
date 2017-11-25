@@ -16,13 +16,13 @@ If you're running on development mode, you can see the interface at http://local
 
 - Install Meteor `curl https://install.meteor.com/ | sh`
 - Install dependencies `npm install`
-- Setup the `BOTS` env variable following the section <a href="#env"> Setup env variables
+- Setup the `BOTS` env variable following the section **Setup env variables**
 - Start development `npm start`
 
 The bot listen for the events: `message`, `team_join` and `user_change`.
 The events handlers are assigned when the bot starts and can be found in `server/bot.js`.
 
-### <span id="#env">Setup env variables</a>
+### Setup env variables
 Setup a `VANHACK_PREMIUM_TOKEN` environment variable with a Slack token of the Bot app
 that you can find in the Slack Apps Directory.
 
@@ -43,7 +43,6 @@ For development mode:
 | ID  | Channel | NODE_ENV  |
 | ------------- | ------------- | ------------- |
 |C28NSV63Y|#tests-dev|development|
-|C28NSV63Y|#tests-dev|development|   
 |C06TES7T7|#linkedin|production|  
 |C0FSPRJBY|#resumes|production|
 |C2475D6QH|#tests|production|
