@@ -37,11 +37,12 @@ http://localhost:3000/data/vanhack_premium
 ## Channels Information
 Bots will listen to channels activities depending of the environment you are running it.
 
-For development mode:
-
 | ID  | Channel | NODE_ENV  |
 | ------------- | ------------- | ------------- |
 |C28NSV63Y|#tests-dev|development|
 |C06TES7T7|#linkedin|production|  
 |C0FSPRJBY|#resumes|production|
 |C2475D6QH|#tests|production|
+
+## Contributing
+Reach @lnmunhoz or @ilya-vanhack on Slack to know more!
