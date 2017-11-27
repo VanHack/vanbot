@@ -16,7 +16,6 @@ If you're running on development mode, you can see the interface at http://local
 
 - Install Meteor `curl https://install.meteor.com/ | sh`
 - Install dependencies `npm install`
-- Setup the `BOTS` env variable following the section **Setup env variables**
 - Start development `npm start`
 
 The bot listen for the events: `message`, `team_join` and `user_change`.
